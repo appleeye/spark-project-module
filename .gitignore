@@ -1,6 +1,18 @@
 *.class
 *.log
-
+/bin/
+/project/target/
+/target/
+.idea
+.cache-main
+.cache-tests
+.classpath
+.project
+.settings/
+esconfig_running.log
+project/project/
+data/
+metastore_db/
 # sbt specific
 .cache
 .history

@@ -1,0 +1,1 @@
+spark-submit --class com.everstring.ad.driver.AdScoringDriver --master yarn --deploy-mode client --queue etl --num-executors 7 --driver-memory 6g --executor-memory 6g --executor-cores 6 /data/run/pat/ad_2.10-1.0.0-SNAPSHOT.jar "analytics.pixel_trk_log_link_visit_action_pat" "2016-03-25 11:00:00" /data/partner/pixel_pat/scores "845213" "5,6"

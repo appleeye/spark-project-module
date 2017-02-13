@@ -1,0 +1,7 @@
+sed -i.bak 's/spark_gid %% "spark-hive" % spark_version % "provided" excludeAll(excludeEclipseJetty/spark_gid %% "spark-hive" % spark_version excludeAll(excludeEclipseJetty/' build.sbt
+
+./sbt test
+
+sed -i.bak 's/spark_gid %% "spark-hive" % spark_version excludeAll(excludeEclipseJetty/spark_gid %% "spark-hive" % spark_version % "provided" excludeAll(excludeEclipseJetty/' build.sbt
+
+rm -f build.sbt.bak
